@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kontaktiraj nas</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="container">
+    
+        <header id="zrfitness-logo">
+            <a href="index.html"><img src="zrfitness.png" alt="ZR Fitness logo"></a>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li> 
+                <li><a href="O_nama.html">O nama</a></li> 
+                <li><a href="grupni_trening.html">Grupni Trening</a></li> 
+                <li><a href="ishrana.html">Ishrana</a></li> 
+                <li><a href="kontakt.html">Kontaktiraj nas</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+        
+        <div id="kontakt">
+        
+            <h2>Spremni da započnete? Kontaktirajte nas danas.</h2>
+            <h4 class="tekst-spec tel-br">064 555 555</h4>
+            <h4>Email: <a href="mailto:zrfitness@gmail.com" class="kontakt-email-link">zrfitness@gmail.com</a></h4>
+            <h3 class="ponuda" onclick="popust()" id="specijalnikod">Pritisni za kod sa popustom (Samo za nove korisnike)</h3>
+            <h4>Adresa: Đure Đakovića бб, Zrenjanin 23000</h4>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2802.4763793548846!2d20.37946057545747!3d45.37956037107259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475adb6c0f745bc3%3A0x4afb4552043a326a!2sTechnical%20Faculty%20%22Mihajlo%20Pupin%22!5e0!3m2!1sen!2srs!4v1714763441482!5m2!1sen!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>       
+        </div>
+        
+        <div id="form">
+        
+            <h2>Molimo vas da unesete vaše podatke kako bismo vas kontaktirali.</h2>
+        
+        <form id="forma" class="form-grid"> 
+        
+            <fieldset>
+                <legend>Korisnički Podaci</legend>
+                <label for="ime">Ime:</label>
+                <input type="text" name="ime" id="ime" required>
+                
+                <label for="prez">Prezime:</label>
+                <input type="text" name="prez" id="prez" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                
+                <label for="broj">Broj Telefona:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Dodatne Informacije</legend>
+                <p>Voleo/la bih da saznam više o:</p>
+                
+                <label for="grpfit"><input type="checkbox" name="interest" id="grpfit" value="Gruptr">Grupnim Treninzima</label>
+                
+                <label for="prtrain"><input type="checkbox" name="interest" id="prtrain" value="Perstr">Personalnim Treninzima</label>
+                
+                <label for="Ishrana"><input type="checkbox" name="interest" id="nutr" value="Ishr">Načinu Ishrane</label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Izvor preporuke</legend>
+                <label for="preporuka">Kako ste saznali za nas?</label>
+                <select name="reference" id="reference">
+                    <option value="Reklama">Reklama</option>
+                    <option value="prijatelj">Prijatelj</option>
+                    <option value="google">Google</option>
+                    <option value="drm">Društvene mreže</option>
+                    <option value="drugo">Drugo</option>
+                </select>
+                
+                <label>Postavite pitanje?</label>
+                <textarea rows="5" cols="35"></textarea>
+                
+                <label for="kod">Kod za popust:</label>
+                <input type="text" id="kod" name="kod">
+            </fieldset>
+            
+            <input type="submit" id="pošalji" value="Pošalji" class="btn">
+            <div id="poruka"></div>
+            
+        </form>
+        
+        </main>
+        
+        <footer>
+        
+            <div class="copyright">
+                <p>&copy; Copyright 2024. Sva prava zadržana.</p>
+                <p><a href="mailto:zrfitness@gmail.com">zrfitness@gmail.com</a></p>
+            </div>
+            
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100057591425864" target="_blank"><img src="facebook-logo.png" alt="Facebook logo"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="twitter-logo.png" alt="Twitter logo"></a>
+            </div>
+            
+        </footer>
+    
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
